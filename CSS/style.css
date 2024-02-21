@@ -1,0 +1,135 @@
+* {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  margin: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: rgb(85, 180, 195);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1180px;
+  padding-left: 100px;
+  justify-content: space-between;
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav > li {
+  margin-left: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav > li > a {
+  text-decoration: none;
+  color: black;
+}
+.nav > li > a:hover {
+  color: rgb(207, 140, 16);
+  transition: all 0.5s ease-in-out;
+}
+
+.logo {
+  align-items: center;
+  text-decoration: none;
+}
+.logo-img {
+  width: 100px;
+  padding-right: 10px;
+  display: block;
+  margin-right: 20px;
+}
+
+.logo-text {
+  color: 173A56;
+  font-size: 24px;
+  justify-content: start;
+}
+.nav__button {
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px 15px;
+}
+
+.signup-btn {
+  background-color: rgb(85, 180, 195);
+  color: white;
+  box-shadow: none;
+  border: none;
+}
+.signin-btn {
+  border: 1px solid grey;
+  margin: 20px;
+}
+
+.section__header {
+  width: 1126px;
+  height: 496px;
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  align-items: center;
+  padding-left: 90px;
+}
+
+.header__info {
+  width: 518px;
+  height: 331px;
+}
+.coding__image {
+  width: 500px;
+}
+
+.header_btn {
+  border-radius: 5px;
+  background-color: rgb(85, 180, 195);
+  text-align: center;
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  margin-top: 30px;
+}
+
+.signin-btn:hover,
+.signup-btn:hover,
+.header_btn:hover {
+  background-color: rgb(207, 140, 16);
+  transition: all 0.5s ease-in-out;
+}
+
+.header_signup {
+  display: flex;
+  align-items: center;
+}
+
+.coding__image {
+  animation: codingimg 3s ease-in-out infinite;
+}
+.coding__image:hover {
+  animation-play-state: paused;
+}
+@keyframes codingimg {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
